@@ -2,7 +2,7 @@
 
 ## Steps
 
-- [ ] Create a test to validate a function returns "Hello World"
+- [x] Create a test to validate a function returns "Hello World"
 - [ ] Implements a class that contains a function to return "Hello World"
 
 ### Refs
