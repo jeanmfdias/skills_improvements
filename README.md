@@ -4,4 +4,4 @@ Studies in Java
 
 ## Exercises
 
-[x] HelloWorld
+- [x] HelloWorld
