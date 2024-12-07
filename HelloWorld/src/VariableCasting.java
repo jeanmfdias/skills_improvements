@@ -1,4 +1,4 @@
-public class VariableCast {
+public class VariableCasting {
     public static void main(String[] args) {
         double num = 10.4;
         int newNum = (int) num;
