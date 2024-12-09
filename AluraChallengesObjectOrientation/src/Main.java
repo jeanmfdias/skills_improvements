@@ -43,5 +43,11 @@ public class Main {
         student.setName("Jean Dias");
 
         student.details();
+
+        // Challenge 7
+        person.setName("Jean Dias");
+        person.setAge(31);
+
+        System.out.println("Is adult? " + person.isAdult());
     }
 }
