@@ -35,6 +35,13 @@ public class Main {
         compass.setColor("White");
 
         compass.details();
-        System.out.println("Age: " + compass.getAge());
+        System.out.println("Car Age: " + compass.getAge());
+
+        // Challenge 5
+        Student student = new Student();
+        student.setAge(31);
+        student.setName("Jean Dias");
+
+        student.details();
     }
 }
