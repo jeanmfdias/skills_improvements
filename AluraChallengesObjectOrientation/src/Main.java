@@ -44,10 +44,19 @@ public class Main {
 
         student.details();
 
+        // Challenge 6
+        BankAccount bankAccount = new BankAccount();
+
         // Challenge 7
         person.setName("Jean Dias");
         person.setAge(31);
 
         System.out.println("Is adult? " + person.isAdult());
+
+        // Challenge 8
+        Product rogStrix = new Product();
+        rogStrix.setName("Asus Rog Strix G16");
+        rogStrix.setPrice(11600);
+        System.out.println("Price with discount: R$ %.2f".formatted(rogStrix.priceWithDiscount(10)));
     }
 }
