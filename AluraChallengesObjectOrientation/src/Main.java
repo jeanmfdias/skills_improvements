@@ -14,7 +14,7 @@ public class Main {
         // Challenge 3
         Music music = new Music();
         music.setTitle("Smells Like Teen Spirit");
-        music.setArtist("Nivana");
+        music.setArtist("Nirvana");
         music.setLaunchYear(1991);
 
         int rate = 0;
@@ -26,5 +26,15 @@ public class Main {
 
         music.details();
         System.out.println("Rating: " + music.getMediaRating());
+
+        // Challenge 4
+        Car compass = new Car();
+        compass.setBrand("Jeep");
+        compass.setModel("Compass");
+        compass.setLaunchYear(2017);
+        compass.setColor("White");
+
+        compass.details();
+        System.out.println("Age: " + compass.getAge());
     }
 }
