@@ -58,5 +58,12 @@ public class Main {
         rogStrix.setName("Asus Rog Strix G16");
         rogStrix.setPrice(11600);
         System.out.println("Price with discount: R$ %.2f".formatted(rogStrix.priceWithDiscount(10)));
+
+        //Challenge 9
+        student.setScore1(6);
+        student.setScore2(8);
+        student.setScore3(4);
+        student.setScore4(7);
+        System.out.println("The average to %s is %.2f".formatted(student.getName(), student.getAverege()));
     }
 }
