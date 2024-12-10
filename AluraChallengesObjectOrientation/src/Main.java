@@ -65,5 +65,11 @@ public class Main {
         student.setScore3(4);
         student.setScore4(7);
         System.out.println("The average to %s is %.2f".formatted(student.getName(), student.getAverege()));
+
+        // Challenge 10
+        Book book = new Book();
+        book.setAuthor("Alex Coelho");
+        book.setName("Java com Orientação a Objeto");
+        book.details();
     }
 }
