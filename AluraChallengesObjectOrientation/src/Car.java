@@ -42,9 +42,9 @@ public class Car {
         String message = """
                 Brand: %s
                 Model: %s
-                Year: %d
                 Color: %s
-                """.formatted(this.brand, this.model, this.launchYear, this.color);
+                Factory Year: %d""".formatted(this.brand, this.model, this.color, this.launchYear);
+        System.out.println(message);
     }
 
     public int getAge() {

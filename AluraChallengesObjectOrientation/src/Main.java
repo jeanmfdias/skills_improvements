@@ -71,5 +71,15 @@ public class Main {
         book.setAuthor("Alex Coelho");
         book.setName("Java com Orientação a Objeto");
         book.details();
+
+        // Challenge 11
+        CarModel renegade = new CarModel();
+        renegade.setBrand("Jeep");
+        renegade.setModel("Renegade");
+        renegade.setLaunchYear(2016);
+        renegade.setColor("Gray");
+        renegade.setYear(2017);
+        renegade.setPrice(75000);
+        renegade.details();
     }
 }
