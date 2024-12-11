@@ -89,5 +89,13 @@ public class Main {
         cat.doNoise();
         dog.waggingTail();
         cat.scratchForniture();
+
+        //Challenge 13
+        CurrentAccount currentAccount = new CurrentAccount();
+        currentAccount.owner = "Jean";
+        currentAccount.depoist(100);
+        System.out.println("Before tax: %.2f".formatted(currentAccount.getAmount()));
+        currentAccount.chargeMonthlyTax();
+        System.out.println("After tax: %.2f".formatted(currentAccount.getAmount()));
     }
 }

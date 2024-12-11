@@ -1,6 +1,6 @@
 public class BankAccount {
-    private int number;
-    private double amount;
+    protected int number;
+    protected double amount;
     public String owner;
 
     public int getNumber() {
@@ -15,7 +15,19 @@ public class BankAccount {
         return amount;
     }
 
-    public void setAmount(double amount) {
-        this.amount = amount;
+    public boolean depoist(double amount) {
+        if (amount > 0) {
+            this.amount += amount;
+            return true;
+        }
+        return false;
+    }
+
+    public boolean withdraw(double amount) {
+        if (amount <= this.amount) {
+            this.amount -= amount;
+            return true;
+        }
+        return false;
     }
 }
