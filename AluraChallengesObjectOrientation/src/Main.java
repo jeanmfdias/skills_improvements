@@ -81,5 +81,13 @@ public class Main {
         renegade.setYear(2017);
         renegade.setPrice(75000);
         renegade.details();
+
+        // Challenge 12
+        Dog dog = new Dog();
+        Cat cat = new Cat();
+        dog.doNoise();
+        cat.doNoise();
+        dog.waggingTail();
+        cat.scratchForniture();
     }
 }
