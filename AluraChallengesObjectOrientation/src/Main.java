@@ -97,5 +97,21 @@ public class Main {
         System.out.println("Before tax: %.2f".formatted(currentAccount.getAmount()));
         currentAccount.chargeMonthlyTax();
         System.out.println("After tax: %.2f".formatted(currentAccount.getAmount()));
+
+        // Challenge 14
+        PrimeNumber primeNumber = new PrimeNumber();
+        primeNumber.listPrime(20);
+
+        PrimeVerificator primeVerificator = new PrimeVerificator();
+        primeVerificator.verifyIsPrime(2);
+        primeVerificator.verifyIsPrime(3);
+        primeVerificator.verifyIsPrime(9);
+        primeVerificator.verifyIsPrime(65);
+        primeVerificator.verifyIsPrime(97);
+
+        PrimeGenerator primeGenerator = new PrimeGenerator();
+        int num = 15;
+        int result = primeGenerator.generateNextPrime(num);
+        System.out.println("The next prime to %d is %d".formatted(num, result));
     }
 }
