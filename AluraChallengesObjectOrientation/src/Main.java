@@ -119,7 +119,14 @@ public class Main {
         double exchange = 6.04;
         coinConversion.setExchangeDollarToReal(exchange);
         double dollar = 5500;
-        System.out.println("US$ %.2f is R$ %.2f on exchange %2.f"
+        System.out.println("US$ %.2f is R$ %.2f on exchange is %.2f"
                 .formatted(dollar, coinConversion.dollarToReal(dollar), exchange));
+
+        // Challenge 16
+        RoomRectangle room = new RoomRectangle();
+        double roomSideA = 4;
+        double roomSideB = 3;
+        System.out.println("Area is %.2f".formatted(room.area(roomSideA, roomSideB)));
+        System.out.println("Perimeter is %.2f".formatted(room.perimeter(roomSideA, roomSideB)));
     }
 }
