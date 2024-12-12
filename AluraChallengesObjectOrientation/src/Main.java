@@ -113,5 +113,13 @@ public class Main {
         int num = 15;
         int result = primeGenerator.generateNextPrime(num);
         System.out.println("The next prime to %d is %d".formatted(num, result));
+
+        // Challenge 15
+        CoinConversion coinConversion = new CoinConversion();
+        double exchange = 6.04;
+        coinConversion.setExchangeDollarToReal(exchange);
+        double dollar = 5500;
+        System.out.println("US$ %.2f is R$ %.2f on exchange %2.f"
+                .formatted(dollar, coinConversion.dollarToReal(dollar), exchange));
     }
 }
