@@ -1,4 +1,4 @@
-public class Product implements Calculable {
+public class Product implements Calculable, Saleable {
     private String name;
     private double price;
 
@@ -25,5 +25,13 @@ public class Product implements Calculable {
     @Override
     public double totalPrice() {
         return this.price;
+    }
+
+    @Override
+    public double finalPrice(int quantity) {
+        if (quantity > 10) {
+            return this.priceWithDiscount(10) * quantity;
+        }
+        return this.totalPrice() * quantity;
     }
 }

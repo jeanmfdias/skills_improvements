@@ -141,5 +141,10 @@ public class Main {
         book.setPrice(15);
         System.out.println("Book price is R$ %.2f".formatted(book.totalPrice()));
         System.out.println("Product price is R$ %.2f".formatted(rogStrix.totalPrice()));
+
+        // Challenge 20
+        System.out.println("10 books sell by R$ %.2f".formatted(book.finalPrice(10)));
+        System.out.println("10 Rog Strix sell by R$ %.2f".formatted(rogStrix.finalPrice(10)));
+        System.out.println("11 Rog Strix sell by R$ %.2f - with promo".formatted(rogStrix.finalPrice(11)));
     }
 }

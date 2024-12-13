@@ -1,4 +1,4 @@
-public class Book implements Calculable {
+public class Book implements Calculable, Saleable {
     private String name;
     private String author;
     private double price;
@@ -38,5 +38,10 @@ public class Book implements Calculable {
     @Override
     public double totalPrice() {
         return this.price;
+    }
+
+    @Override
+    public double finalPrice(int quantity) {
+        return this.totalPrice() * quantity;
     }
 }
