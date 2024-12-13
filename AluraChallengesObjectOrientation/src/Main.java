@@ -136,5 +136,10 @@ public class Main {
         WeatherCalc weatherCalc = new WeatherCalc();
         System.out.println("35º celsius is %.2fº fahrenheit".formatted(weatherCalc.celsiusToFahrenheit(35)));
         System.out.println("98º fairenheit is %.2fº celsius".formatted(weatherCalc.fahrenheitToCelsius(98)));
+
+        // Challenge 19
+        book.setPrice(15);
+        System.out.println("Book price is R$ %.2f".formatted(book.totalPrice()));
+        System.out.println("Product price is R$ %.2f".formatted(rogStrix.totalPrice()));
     }
 }

@@ -1,4 +1,4 @@
-public class Product {
+public class Product implements Calculable {
     private String name;
     private double price;
 
@@ -20,5 +20,10 @@ public class Product {
 
     public double priceWithDiscount(double percent) {
         return this.price - (this.price * (percent / 100));
+    }
+
+    @Override
+    public double totalPrice() {
+        return this.price;
     }
 }

@@ -1,6 +1,7 @@
-public class Book {
+public class Book implements Calculable {
     private String name;
     private String author;
+    private double price;
 
     public String getName() {
         return name;
@@ -18,11 +19,24 @@ public class Book {
         this.author = author;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     public void details() {
         String message = """
                 Book name: %s
                 Author: %s
                 """.formatted(name, author);
         System.out.println(message);
+    }
+
+    @Override
+    public double totalPrice() {
+        return this.price;
     }
 }
