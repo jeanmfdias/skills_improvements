@@ -131,5 +131,10 @@ public class Main {
 
         // Challenge 17
         calculator.showMultiplicationTable(7);
+
+        // Challenge 18
+        WeatherCalc weatherCalc = new WeatherCalc();
+        System.out.println("35º celsius is %.2fº fahrenheit".formatted(weatherCalc.celsiusToFahrenheit(35)));
+        System.out.println("98º fairenheit is %.2fº celsius".formatted(weatherCalc.fahrenheitToCelsius(98)));
     }
 }
