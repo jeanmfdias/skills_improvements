@@ -128,5 +128,8 @@ public class Main {
         double roomSideB = 3;
         System.out.println("Area is %.2f".formatted(room.area(roomSideA, roomSideB)));
         System.out.println("Perimeter is %.2f".formatted(room.perimeter(roomSideA, roomSideB)));
+
+        // Challenge 17
+        calculator.showMultiplicationTable(7);
     }
 }
