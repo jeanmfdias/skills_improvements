@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AluraChallengesFirstApp/AluraChallengesFirstApp.iml" filepath="$PROJECT_DIR$/AluraChallengesFirstApp/AluraChallengesFirstApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AluraChallengesListCollections/AluraChallengesListCollections.iml" filepath="$PROJECT_DIR$/AluraChallengesListCollections/AluraChallengesListCollections.iml" />
       <module fileurl="file://$PROJECT_DIR$/AluraChallengesObjectOrientation/AluraChallengesObjectOrientation.iml" filepath="$PROJECT_DIR$/AluraChallengesObjectOrientation/AluraChallengesObjectOrientation.iml" />
       <module fileurl="file://$PROJECT_DIR$/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld.iml" />
     </modules>
