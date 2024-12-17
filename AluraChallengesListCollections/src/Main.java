@@ -50,5 +50,15 @@ public class Main {
         lettuce.setQuantity(100);
         lettuce.setPrice(5);
         System.out.println(lettuce);
+
+        ArrayList<String> myLanguages = new ArrayList<>();
+        myLanguages.add("Java");
+        myLanguages.add("JavaScript");
+        myLanguages.add("React.js");
+        myLanguages.add("PHP");
+
+        for (String language : myLanguages) {
+            System.out.println(language);
+        }
     }
 }
