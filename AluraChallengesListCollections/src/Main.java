@@ -60,5 +60,21 @@ public class Main {
         for (String language : myLanguages) {
             System.out.println(language);
         }
+
+        Dog dog = new Dog();
+        if (dog instanceof Animal) {
+            Animal animal = dog;
+            System.out.println(animal);
+        }
+
+        double sumPriceProduct = 0;
+        int i = 0;
+        for (Product product : products) {
+            sumPriceProduct += product.getPrice();
+            i++;
+        }
+        if (i > 0) {
+            System.out.println("Product price average is R$ %.2f".formatted(sumPriceProduct / i));
+        }
     }
 }
