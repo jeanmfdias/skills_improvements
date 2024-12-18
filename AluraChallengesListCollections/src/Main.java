@@ -82,5 +82,28 @@ public class Main {
 
         Rectangle rectangle = new Rectangle(3, 4);
         System.out.println("Rectangle area: %.2f".formatted(rectangle.calcArea()));
+
+        ArrayList<BankAccount> bankAccounts = new ArrayList<>();
+        BankAccount bankAccount1 = new BankAccount(123);
+        bankAccount1.deposit(1000);
+
+        BankAccount bankAccount2 = new BankAccount(456);
+        bankAccount2.deposit(1001);
+
+        BankAccount bankAccount3 = new BankAccount(789);
+        bankAccount3.deposit(1003);
+
+        bankAccounts.add(bankAccount1);
+        bankAccounts.add(bankAccount2);
+        bankAccounts.add(bankAccount3);
+
+        BankAccount greaterAmount = new BankAccount(0);
+        for (BankAccount account : bankAccounts) {
+            if (account.getAmount() > greaterAmount.getAmount()) {
+                greaterAmount = account;
+            }
+        }
+
+        System.out.println("The account with greater amount is %d".formatted(greaterAmount.getNumber()));
     }
 }
