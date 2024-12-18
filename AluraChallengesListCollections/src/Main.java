@@ -76,5 +76,11 @@ public class Main {
         if (i > 0) {
             System.out.println("Product price average is R$ %.2f".formatted(sumPriceProduct / i));
         }
+
+        Circle circle = new Circle(4);
+        System.out.println("Circle area: %.2f".formatted(circle.calcArea()));
+
+        Rectangle rectangle = new Rectangle(3, 4);
+        System.out.println("Rectangle area: %.2f".formatted(rectangle.calcArea()));
     }
 }
